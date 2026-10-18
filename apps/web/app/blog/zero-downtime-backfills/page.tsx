@@ -55,7 +55,12 @@ LIMIT 5000;`}</code>
 					the chunk before emitting. The live event is already on its way.
 				</p>
 				<figure>
-					<img src="/blog/backfill-lag.svg" width={720} height={300} />
+					<img
+						src="/blog/backfill-lag.svg"
+						width={720}
+						height={300}
+						alt="Line chart of end-to-end live change lag over a 7 hour 40 minute backfill, staying below 1.2 seconds throughout"
+					/>
 					<figcaption>
 						End-to-end lag for live changes during a 900M-row backfill on a customer’s Aurora cluster.
 						The backfill ran for 7 hours 40 minutes; live lag stayed under 1.2 seconds.

@@ -5,6 +5,8 @@ import { entries } from "./entries";
 
 export const metadata: Metadata = {
 	title: "Changelog",
+	description:
+		"Every Driftbase release in one place: new sinks, CLI commands, performance improvements and fixes for the drift CLI and the hosted sync service.",
 	alternates: { canonical: "/changelog" },
 };
 
