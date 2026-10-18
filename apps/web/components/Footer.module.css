@@ -1,0 +1,51 @@
+.footer {
+	border-top: 1px solid var(--db-line);
+	background: var(--db-sand);
+	margin-top: 96px;
+	font-size: 15px;
+}
+
+.inner {
+	max-width: var(--db-max);
+	margin: 0 auto;
+	padding: 40px 20px 28px;
+}
+
+.cols {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	gap: 24px;
+}
+
+.cols ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cols li {
+	margin: 6px 0;
+}
+
+.cols a {
+	color: var(--db-ink);
+	text-decoration: none;
+}
+
+.cols a:hover {
+	text-decoration: underline;
+}
+
+.heading {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--db-slate);
+	margin: 0 0 8px;
+}
+
+.legal {
+	margin: 32px 0 0;
+	color: var(--db-slate);
+	font-size: 14px;
+}

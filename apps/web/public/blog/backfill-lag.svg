@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <g stroke="#dcd7ca" stroke-width="1">
+    <line x1="60" y1="40" x2="700" y2="40"/>
+    <line x1="60" y1="110" x2="700" y2="110"/>
+    <line x1="60" y1="180" x2="700" y2="180"/>
+  </g>
+  <line x1="60" y1="250" x2="700" y2="250" stroke="#0f1720" stroke-width="1.5"/>
+  <g fill="#5b6675" text-anchor="end">
+    <text x="52" y="44">1.5s</text>
+    <text x="52" y="114">1.0s</text>
+    <text x="52" y="184">0.5s</text>
+    <text x="52" y="254">0</text>
+  </g>
+  <g fill="#5b6675" text-anchor="middle">
+    <text x="60" y="270">0h</text>
+    <text x="220" y="270">2h</text>
+    <text x="380" y="270">4h</text>
+    <text x="540" y="270">6h</text>
+    <text x="680" y="270">7h40</text>
+  </g>
+  <rect x="60" y="40" width="620" height="210" fill="#1f6feb" opacity="0.06"/>
+  <text x="70" y="58" fill="#0b3d91">backfill running</text>
+  <polyline fill="none" stroke="#1f6feb" stroke-width="2.5" stroke-linejoin="round"
+    points="60,214 90,208 120,196 150,170 180,182 210,150 240,176 270,160 300,188 330,132 360,170 390,158 420,184 450,85 480,166 510,174 540,150 570,190 600,168 630,180 660,200 680,212 700,216"/>
+  <circle cx="450" cy="85" r="4" fill="#0b3d91"/>
+  <text x="458" y="80" fill="#0b3d91">peak 1.18s</text>
+  <text x="380" y="292" fill="#0f1720" text-anchor="middle" font-weight="600">Live change lag during backfill (p99, 1-minute windows)</text>
+</svg>

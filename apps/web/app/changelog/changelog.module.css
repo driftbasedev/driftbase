@@ -1,0 +1,48 @@
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list > li {
+	border-top: 1px solid var(--db-line);
+	padding: 28px 0;
+}
+
+.meta {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	margin: 0 0 4px;
+	color: var(--db-slate);
+	font-size: 15px;
+}
+
+.version {
+	font-family: var(--db-font-mono);
+	background: var(--db-ink);
+	color: var(--db-paper);
+	padding: 2px 8px;
+	border-radius: 999px;
+	font-size: 13px;
+}
+
+.list h2 {
+	font-size: 22px;
+	margin: 0 0 8px;
+}
+
+.list ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.list ul li {
+	margin: 6px 0;
+}
+
+.list code {
+	background: var(--db-sand);
+	padding: 1px 5px;
+	border-radius: 4px;
+}

@@ -1,0 +1,49 @@
+.header {
+	border-bottom: 1px solid var(--db-line);
+	background: var(--db-paper);
+}
+
+.inner {
+	max-width: var(--db-max);
+	margin: 0 auto;
+	padding: 14px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 700;
+	font-size: 19px;
+	color: var(--db-ink);
+	text-decoration: none;
+	letter-spacing: -0.01em;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	font-size: 15px;
+}
+
+.nav a {
+	color: var(--db-ink);
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: var(--db-tide);
+}
+
+.nav .cta {
+	border: 1px solid var(--db-ink);
+	border-radius: var(--db-radius);
+	padding: 6px 12px;
+}

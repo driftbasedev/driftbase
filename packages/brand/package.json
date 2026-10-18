@@ -1,0 +1,22 @@
+{
+  "name": "@driftbase/brand",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./tokens.css": "./tokens.css",
+    "./logo.svg": "./logo.svg"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "tokens.css",
+    "logo.svg"
+  ]
+}

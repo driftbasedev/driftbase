@@ -1,0 +1,174 @@
+.hero {
+	max-width: var(--db-max);
+	margin: 0 auto;
+	padding: 72px 20px 48px;
+	display: grid;
+	grid-template-columns: 1.1fr 1fr;
+	gap: 40px;
+	align-items: center;
+}
+
+@media (max-width: 860px) {
+	.hero {
+		grid-template-columns: 1fr;
+	}
+}
+
+.kicker {
+	color: var(--db-kelp);
+	font-weight: 600;
+	margin: 0 0 12px;
+}
+
+.headline {
+	font-size: 52px;
+	line-height: 1.05;
+	letter-spacing: -0.03em;
+	margin: 0 0 20px;
+}
+
+.sub {
+	font-size: 19px;
+	color: var(--db-slate);
+	margin: 0 0 28px;
+}
+
+.actions {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-bottom: 24px;
+}
+
+.primary,
+.secondary {
+	display: inline-block;
+	padding: 11px 18px;
+	border-radius: var(--db-radius);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.primary {
+	background: var(--db-tide);
+	color: #fff;
+}
+
+.primary:hover {
+	background: var(--db-tide-deep);
+}
+
+.secondary {
+	border: 1px solid var(--db-ink);
+	color: var(--db-ink);
+}
+
+.install {
+	display: inline-block;
+	background: var(--db-ink);
+	color: var(--db-paper);
+	padding: 10px 14px;
+	border-radius: var(--db-radius);
+	margin: 0;
+}
+
+.heroArt {
+	width: 100%;
+	height: auto;
+}
+
+.band {
+	border-top: 1px solid var(--db-line);
+	border-bottom: 1px solid var(--db-line);
+	background: var(--db-sand);
+	padding: 20px;
+	text-align: center;
+}
+
+.bandLabel {
+	margin: 0 0 8px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--db-slate);
+}
+
+.sinks {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 28px;
+	font-weight: 600;
+}
+
+.grid {
+	max-width: var(--db-max);
+	margin: 0 auto;
+	padding: 64px 20px 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 36px 48px;
+}
+
+.grid h2 {
+	font-size: 22px;
+	margin: 0 0 8px;
+}
+
+.grid p {
+	margin: 0;
+	color: var(--db-slate);
+}
+
+.grid code {
+	background: var(--db-sand);
+	padding: 1px 5px;
+	border-radius: 4px;
+}
+
+.quote {
+	max-width: 760px;
+	margin: 72px auto 0;
+	padding: 0 20px;
+}
+
+.quote blockquote {
+	margin: 0;
+	border-left: 4px solid var(--db-tide);
+	padding-left: 24px;
+}
+
+.quote p {
+	font-size: 22px;
+	line-height: 1.45;
+	margin: 0 0 12px;
+}
+
+.quote footer {
+	color: var(--db-slate);
+	font-size: 15px;
+}
+
+.closer {
+	max-width: var(--db-max);
+	margin: 72px auto 0;
+	padding: 48px 20px;
+	text-align: center;
+	background: var(--db-ink);
+	color: var(--db-paper);
+	border-radius: 14px;
+}
+
+.closer h2 {
+	font-size: 32px;
+	margin: 0 0 12px;
+}
+
+.closer p {
+	color: #c8ccd2;
+	max-width: 560px;
+	margin: 0 auto 24px;
+}

@@ -1,0 +1,76 @@
+.wrap {
+	max-width: var(--db-max);
+	margin: 0 auto;
+	padding: 56px 20px 0;
+}
+
+.narrow {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 56px 20px 0;
+}
+
+.eyebrow {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--db-kelp);
+	font-weight: 600;
+	margin: 0 0 8px;
+}
+
+.title {
+	font-size: 44px;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+	margin: 0 0 16px;
+}
+
+.lede {
+	font-size: 20px;
+	color: var(--db-slate);
+	margin: 0 0 32px;
+	max-width: 640px;
+}
+
+.prose h2 {
+	font-size: 26px;
+	letter-spacing: -0.01em;
+	margin: 40px 0 12px;
+}
+
+.prose h3 {
+	font-size: 19px;
+	margin: 28px 0 8px;
+}
+
+.prose pre {
+	background: var(--db-ink);
+	color: var(--db-paper);
+	padding: 16px 18px;
+	border-radius: var(--db-radius);
+	overflow-x: auto;
+	line-height: 1.5;
+}
+
+.prose :not(pre) > code {
+	background: var(--db-sand);
+	padding: 1px 5px;
+	border-radius: 4px;
+}
+
+.prose figure {
+	margin: 28px 0;
+}
+
+.prose figcaption {
+	font-size: 14px;
+	color: var(--db-slate);
+	margin-top: 8px;
+}
+
+.meta {
+	color: var(--db-slate);
+	font-size: 15px;
+	margin: 0 0 32px;
+}

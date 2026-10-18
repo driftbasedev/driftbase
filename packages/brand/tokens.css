@@ -1,0 +1,16 @@
+:root {
+	--db-ink: #0f1720;
+	--db-paper: #f7f6f2;
+	--db-tide: #1f6feb;
+	--db-tide-deep: #0b3d91;
+	--db-kelp: #1a7f5a;
+	--db-sand: #e9e4d8;
+	--db-slate: #5b6675;
+	--db-line: #dcd7ca;
+
+	--db-font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	--db-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+	--db-radius: 8px;
+	--db-max: 1080px;
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" fill="none" font-family="ui-monospace, Menlo, monospace" font-size="12">
+  <rect x="16" y="120" width="150" height="160" rx="10" fill="#ffffff" stroke="#0f1720" stroke-width="2"/>
+  <text x="32" y="148" fill="#0f1720" font-weight="700">postgres</text>
+  <rect x="32" y="162" width="118" height="18" rx="3" fill="#e9e4d8"/>
+  <rect x="32" y="186" width="118" height="18" rx="3" fill="#e9e4d8"/>
+  <rect x="32" y="210" width="118" height="18" rx="3" fill="#1f6feb" opacity="0.25"/>
+  <rect x="32" y="234" width="118" height="18" rx="3" fill="#e9e4d8"/>
+  <text x="38" y="224" fill="#0b3d91">UPDATE orders</text>
+
+  <path d="M166 200 C 200 200, 200 200, 220 200" stroke="#0f1720" stroke-width="2"/>
+  <circle cx="190" cy="200" r="4" fill="#1f6feb"/>
+
+  <rect x="220" y="160" width="100" height="80" rx="40" fill="#0f1720"/>
+  <path d="M244 186c8 0 10 7 18 7h14" stroke="#1f6feb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M244 214c8 0 10-7 18-7" stroke="#f7f6f2" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="281" cy="193" r="3.5" fill="#1a7f5a"/>
+  <text x="240" y="258" fill="#5b6675">drift</text>
+
+  <path d="M320 190 C 360 190, 360 110, 380 110" stroke="#0f1720" stroke-width="2"/>
+  <path d="M320 210 C 360 210, 360 290, 380 290" stroke="#0f1720" stroke-width="2"/>
+  <circle cx="352" cy="140" r="4" fill="#1f6feb"/>
+  <circle cx="352" cy="262" r="4" fill="#1a7f5a"/>
+
+  <rect x="380" y="56" width="124" height="110" rx="10" fill="#ffffff" stroke="#1f6feb" stroke-width="2"/>
+  <text x="394" y="82" fill="#0b3d91" font-weight="700">search</text>
+  <text x="394" y="106" fill="#5b6675">{ "id": 4410,</text>
+  <text x="394" y="124" fill="#5b6675">  "status":</text>
+  <text x="394" y="142" fill="#0b3d91">  "shipped" }</text>
+
+  <rect x="380" y="236" width="124" height="110" rx="10" fill="#ffffff" stroke="#1a7f5a" stroke-width="2"/>
+  <text x="394" y="262" fill="#1a7f5a" font-weight="700">cache</text>
+  <text x="394" y="286" fill="#5b6675">order:4410</text>
+  <text x="394" y="304" fill="#5b6675">DEL → SET</text>
+  <text x="394" y="322" fill="#1a7f5a">ttl 3600</text>
+
+  <text x="196" y="330" fill="#5b6675">lag 0.42s · lsn 2F/9A1C04B8</text>
+</svg>

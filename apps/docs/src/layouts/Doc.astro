@@ -1,0 +1,87 @@
+---
+import "@driftbase/brand/tokens.css";
+import "../styles/docs.css";
+import { company, logoMark } from "@driftbase/brand";
+import { nav } from "../nav";
+
+interface Props {
+	frontmatter: {
+		title: string;
+		description?: string;
+	};
+}
+
+const { frontmatter } = Astro.props;
+const current = Astro.url.pathname.replace(/\/$/, "") || "/";
+const canonical = new URL(current, Astro.site);
+const pageTitle = current === "/" ? "Driftbase Docs" : `${frontmatter.title} · Driftbase Docs`;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{pageTitle}</title>
+		{frontmatter.description && <meta name="description" content={frontmatter.description} />}
+		<link rel="canonical" href={canonical} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:site_name" content="Driftbase Docs" />
+		<meta property="og:url" content={canonical} />
+	</head>
+	<body>
+		<header class="top">
+			<a class="brand" href="/">
+				<svg width="26" height="26" viewBox={logoMark.viewBox} fill="none" role="img" aria-label="Driftbase">
+					<path d={logoMark.paths[0]} stroke="var(--db-tide)" stroke-width="3" stroke-linecap="round" />
+					<path d={logoMark.paths[1]} stroke="var(--db-paper)" stroke-width="3" stroke-linecap="round" />
+					<circle cx={logoMark.dot.cx} cy={logoMark.dot.cy} r={logoMark.dot.r} fill="var(--db-kelp)" />
+				</svg>
+				<span>Driftbase <em>Docs</em></span>
+			</a>
+			<nav class="toplinks" aria-label="Site">
+				<a href={company.webUrl}>driftbase.dev</a>
+				<a href={`${company.webUrl}/changelog`}>Changelog</a>
+				<a href={`${company.github}/drift`}>GitHub</a>
+				<a class="signin" href={company.appUrl}>Dashboard</a>
+			</nav>
+		</header>
+		<div class="shell">
+			<aside class="sidebar">
+				<nav aria-label="Documentation">
+					{
+						nav.map((section) => (
+							<div class="section">
+								<p class="section-label">{section.label}</p>
+								<ul>
+									{section.items.map((item) => (
+										<li>
+											<a href={item.href} aria-current={item.href === current ? "page" : undefined}>
+												{item.title}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						))
+					}
+				</nav>
+			</aside>
+			<main class="content">
+				<h1>{frontmatter.title}</h1>
+				<article class="prose">
+					<slot />
+				</article>
+				<footer class="foot">
+					<p>
+						Something wrong on this page? Email <a href="mailto:docs@driftbase.dev">docs@driftbase.dev</a> or
+						open an issue on <a href={`${company.github}/drift/issues`}>GitHub</a>.
+					</p>
+					<p class="legal">© {year} {company.legalName}</p>
+				</footer>
+			</main>
+		</div>
+	</body>
+</html>
