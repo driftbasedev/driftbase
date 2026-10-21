@@ -65,3 +65,5 @@ drift status
 `drift status` shows documents written, current lag and the last applied LSN for each
 pipeline. Meilisearch indexes asynchronously, so a document can take a moment to become
 searchable after Driftbase reports it written.
+
+See also: [Sync to Algolia](/guides/algolia).
