@@ -55,7 +55,12 @@ LIMIT 5000;`}</code>
 					the chunk before emitting. The live event is already on its way.
 				</p>
 				<figure>
-					<img src="/blog/backfill-lag.svg" width={720} height={300} />
+					<img
+						src="/blog/backfill-lag.svg"
+						width={720}
+						height={300}
+						alt="Line chart of p99 live change lag in 1-minute windows over the 7 hour 40 minute backfill. Lag mostly stays between about 0.3 and 0.9 seconds, with a single peak of 1.18 seconds around the 4.5-hour mark, and returns to roughly 0.25 seconds as the backfill finishes."
+					/>
 					<figcaption>
 						End-to-end lag for live changes during a 900M-row backfill on a customer’s Aurora cluster.
 						The backfill ran for 7 hours 40 minutes; live lag stayed under 1.2 seconds.
