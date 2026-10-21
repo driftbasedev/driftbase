@@ -12,7 +12,7 @@ You need:
 - Postgres 12 or newer where you can change `wal_level` (RDS, Aurora, Cloud SQL, Neon,
   Supabase and self-managed all work).
 - A search index or cache to write to. We use Meilisearch here.
-- A Driftbase account. The Free plan includes 500,000 change events a month, one source
+- A Driftbase account. The Free plan includes 1,000,000 change events a month, one source
   database and up to three sinks, and doesn't ask for a card.
 
 ## 1. Install the CLI
