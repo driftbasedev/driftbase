@@ -23,6 +23,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
+			<head>
+				<script src="https://app.letterprove.com/attest.js" data-key="lp_live_driftbase_445c6479607a"></script>
+			</head>
 			<body>
 				<Header />
 				<main>{children}</main>
