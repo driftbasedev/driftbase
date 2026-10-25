@@ -38,7 +38,7 @@ export async function GET() {
 					<span style={{ fontSize: 44, fontWeight: 700, letterSpacing: "-0.01em" }}>Driftbase</span>
 				</div>
 				<div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-					<span style={{ fontSize: 30, fontWeight: 700, color: colors.kelp }}>
+					<span style={{ fontSize: 30, fontWeight: 700, color: colors.tide }}>
 						Change data capture for application teams
 					</span>
 					<span style={{ fontSize: 76, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.03em" }}>

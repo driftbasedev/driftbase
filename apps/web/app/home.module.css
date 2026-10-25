@@ -80,7 +80,7 @@
 .band {
 	border-top: 1px solid var(--db-line);
 	border-bottom: 1px solid var(--db-line);
-	background: var(--db-sand);
+	background: var(--db-paper);
 	padding: 20px;
 	text-align: center;
 }
