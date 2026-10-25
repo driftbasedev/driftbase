@@ -10,13 +10,51 @@ export const metadata: Metadata = {
 	description:
 		"Driftbase streams every committed change in Postgres to Elasticsearch, Meilisearch, Typesense and Redis within a second, from logical replication. No triggers, no dual writes.",
 	alternates: { canonical: "/" },
+	openGraph: {
+		siteName: "Driftbase",
+		type: "website",
+		url: "/",
+		title: "Driftbase · Keep Postgres, search and cache in sync",
+		description:
+			"Driftbase streams every committed change in Postgres to Elasticsearch, Meilisearch, Typesense and Redis within a second, from logical replication. No triggers, no dual writes.",
+		images: [{ url: "/og/home.png", width: 1200, height: 630, alt: "Driftbase · Keep Postgres, search and cache in sync" }],
+	},
+	twitter: {
+		card: "summary_large_image",
+		site: "@driftbasedev",
+		images: ["/og/home.png"],
+	},
 };
+
+const jsonLd = [
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		name: company.name,
+		legalName: company.legalName,
+		description:
+			"Driftbase streams every committed change in Postgres to Elasticsearch, Meilisearch, Typesense and Redis within a second, from logical replication. No triggers, no dual writes.",
+		url: company.webUrl,
+		logo: `${company.webUrl}/icon.svg`,
+		email: company.email,
+		sameAs: [company.github, "https://x.com/driftbasedev"],
+	},
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		name: company.name,
+		description: "Keep Postgres, search and cache in sync.",
+		url: company.webUrl,
+		publisher: { "@type": "Organization", name: company.name, url: company.webUrl },
+	},
+];
 
 const sinks = ["Elasticsearch", "OpenSearch", "Meilisearch", "Typesense", "Redis", "Valkey"];
 
 export default function Home() {
 	return (
 		<>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 			<section className={styles.hero}>
 				<div className={styles.heroText}>
 					<p className={styles.kicker}>Change data capture for application teams</p>

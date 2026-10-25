@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import page from "@/components/Page.module.css";
+import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { formatDate } from "../posts";
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function Post() {
 	return (
 		<article className={page.narrow}>
+			<ArticleJsonLd slug="zero-downtime-backfills" description={metadata.description} />
 			<p className={page.eyebrow}>
 				<Link href="/blog">Blog</Link>
 			</p>
