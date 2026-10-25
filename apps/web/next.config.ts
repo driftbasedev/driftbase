@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
 	async redirects() {
 		return [
 			{ source: "/docs", destination: "https://docs.driftbase.dev", permanent: true },
+			{ source: "/docs/:path*", destination: "https://docs.driftbase.dev/:path*", permanent: true },
 			{ source: "/company", destination: "/about", permanent: true },
 		];
 	},
