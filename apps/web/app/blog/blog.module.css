@@ -17,7 +17,7 @@
 
 .list h2 a {
 	color: var(--db-ink);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .list h2 a:hover {
@@ -27,6 +27,7 @@
 .list p {
 	margin: 0;
 	color: var(--db-slate);
+	font-weight: 600;
 }
 
 .list .meta {
@@ -42,5 +43,18 @@
 
 .intro {
 	color: var(--db-slate);
+	font-weight: 600;
 	margin: 0 0 16px;
+}
+
+.eyebrow {
+	color: var(--db-tide);
+}
+
+.title {
+	font-weight: 700;
+}
+
+.lede {
+	font-weight: 600;
 }

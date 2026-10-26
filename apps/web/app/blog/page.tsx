@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 export default function Blog() {
 	return (
 		<div className={page.narrow}>
-			<p className={page.eyebrow}>Blog</p>
-			<h1 className={page.title}>Notes from the replication slot</h1>
-			<p className={page.lede}>How Driftbase works inside, and what we learn running it for other people.</p>
+			<p className={`${page.eyebrow} ${styles.eyebrow}`}>Blog</p>
+			<h1 className={`${page.title} ${styles.title}`}>Notes from the replication slot</h1>
+			<p className={`${page.lede} ${styles.lede}`}>How Driftbase works inside, and what we learn running it for other people.</p>
 			<ul className={styles.list}>
 				{posts.map((p) => (
 					<li key={p.slug}>

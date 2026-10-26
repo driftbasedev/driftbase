@@ -1,6 +1,6 @@
 .footer {
 	border-top: 1px solid var(--db-line);
-	background: var(--db-sand);
+	background: var(--db-paper);
 	margin-top: 96px;
 	font-size: 15px;
 }
@@ -29,7 +29,7 @@
 
 .cols a {
 	color: var(--db-ink);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .cols a:hover {
