@@ -32,3 +32,36 @@ export function formatDate(date: string) {
 		year: "numeric",
 	});
 }
+
+export type Further = {
+	title: string;
+	href: string;
+	summary: string;
+};
+
+export const further: Further[] = [
+	{
+		title: "Run a backfill",
+		href: "/guides/backfills",
+		summary:
+			"Copy existing Postgres rows into a new or rebuilt index with drift backfill while live changes keep streaming.",
+	},
+	{
+		title: "Sync to Meilisearch",
+		href: "/guides/meilisearch",
+		summary:
+			"Keep a Meilisearch index in sync with a Postgres table, including filterable attributes, nested documents and deletes.",
+	},
+	{
+		title: "Invalidate a Redis cache",
+		href: "/guides/redis-cache",
+		summary:
+			"Delete or refresh Redis and Valkey cache keys the moment the underlying Postgres rows change, instead of relying on TTLs.",
+	},
+	{
+		title: "Getting started",
+		href: "/getting-started",
+		summary:
+			"Connect a Postgres database to a search index, from enabling logical replication to watching your first change arrive.",
+	},
+];
