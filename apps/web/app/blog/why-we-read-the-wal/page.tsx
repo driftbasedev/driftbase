@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 import page from "@/components/Page.module.css";
 import { formatDate } from "../posts";
 
+const description =
+	"Triggers and outbox tables look simpler than logical replication until the first long transaction or the first missed delete. Here is why Driftbase reads the WAL.";
+
 export const metadata: Metadata = {
 	title: "Why we read the WAL instead of using triggers",
-	description:
-		"Triggers and outbox tables look simpler than logical replication until the first long transaction or the first missed delete. Here is why Driftbase reads the WAL.",
+	description,
 	alternates: { canonical: "/blog/why-we-read-the-wal" },
 };
 
 export default function Post() {
 	return (
 		<article className={page.narrow}>
+			<ArticleJsonLd slug="why-we-read-the-wal" description={description} />
 			<p className={page.eyebrow}>
 				<Link href="/blog">Blog</Link>
 			</p>

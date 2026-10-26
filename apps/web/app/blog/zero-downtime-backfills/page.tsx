@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 import page from "@/components/Page.module.css";
 import { formatDate } from "../posts";
 
+const description =
+	"The algorithm behind drift backfill: keyset chunks, per-chunk low and high watermarks, and why a live change always beats a backfilled row.";
+
 export const metadata: Metadata = {
 	title: "How we backfill a 900-million-row table without pausing the stream",
-	description:
-		"The algorithm behind drift backfill: keyset chunks, per-chunk low and high watermarks, and why a live change always beats a backfilled row.",
+	description,
 	alternates: { canonical: "/blog/zero-downtime-backfills" },
 };
 
 export default function Post() {
 	return (
 		<article className={page.narrow}>
+			<ArticleJsonLd slug="zero-downtime-backfills" description={description} />
 			<p className={page.eyebrow}>
 				<Link href="/blog">Blog</Link>
 			</p>
