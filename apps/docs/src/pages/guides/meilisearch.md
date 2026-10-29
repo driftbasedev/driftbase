@@ -4,7 +4,7 @@ title: Sync to Meilisearch
 description: Keep a Meilisearch index in sync with a Postgres table using Driftbase, including filterable attributes, nested documents and handling deletes.
 ---
 
-# Keep a Meilisearch index in sync with Postgres
+## Keep a Meilisearch index in sync with Postgres
 
 This guide syncs an `articles` table, with its author and tags, into a Meilisearch `articles`
 index that supports filtering by tag.
