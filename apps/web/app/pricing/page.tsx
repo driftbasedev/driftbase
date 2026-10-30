@@ -85,8 +85,8 @@ const faqs = [
 export default function Pricing() {
 	return (
 		<div className={page.wrap}>
-			<p className={page.eyebrow}>Pricing</p>
-			<h1 className={page.title}>Pay for the changes you sync, not the rows you store.</h1>
+			<p className={`${page.eyebrow} ${styles.eyebrow}`}>Pricing</p>
+			<h1 className={`${page.title} ${styles.title}`}>Pay for the changes you sync, not the rows you store.</h1>
 			<p className={page.lede}>
 				Every plan includes the full CLI, every sink and backfills that don’t count against your quota.
 			</p>
