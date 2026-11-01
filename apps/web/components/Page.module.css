@@ -14,13 +14,14 @@
 	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
-	color: var(--db-kelp);
+	color: var(--db-tide);
 	font-weight: 600;
 	margin: 0 0 8px;
 }
 
 .title {
 	font-size: 44px;
+	font-weight: 700;
 	line-height: 1.1;
 	letter-spacing: -0.02em;
 	margin: 0 0 16px;

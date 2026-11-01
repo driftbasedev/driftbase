@@ -19,7 +19,7 @@
 }
 
 .channels a {
-	font-family: var(--db-font-mono);
+	font-family: var(--db-font-sans);
 	font-size: 15px;
 }
 
