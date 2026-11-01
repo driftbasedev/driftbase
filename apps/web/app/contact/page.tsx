@@ -4,7 +4,7 @@ import page from "@/components/Page.module.css";
 import styles from "./contact.module.css";
 
 export const metadata: Metadata = {
-	title: "Company",
+	title: "Contact Driftbase",
 	description:
 		"Contact Driftbase for sales, support, security reports or press. We answer email within one business day.",
 	alternates: { canonical: "/contact" },
