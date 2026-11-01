@@ -119,7 +119,7 @@ export default function Pricing() {
 
 			<p className={styles.note}>
 				Backfills, retries and replays are free. For exactly how events are metered and what happens at
-				each limit, see <Link href="/docs/limits">plan limits and metering</Link>.
+				each limit, see <a href={`${company.docsUrl}/limits`}>plan limits and metering</a>.
 			</p>
 
 			<section className={styles.faq}>
