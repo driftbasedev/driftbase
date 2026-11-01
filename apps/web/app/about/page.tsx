@@ -4,7 +4,7 @@ import page from "@/components/Page.module.css";
 import styles from "./about.module.css";
 
 export const metadata: Metadata = {
-	title: "Company",
+	title: "About",
 	description:
 		"Driftbase is a nine-person company in Portland, Oregon, founded in 2023 by former Heroku Postgres and Algolia engineers to make derived data stores trustworthy.",
 	alternates: { canonical: "/about" },
