@@ -19,8 +19,8 @@ export default function Home() {
 		<>
 			<section className={styles.hero}>
 				<div className={styles.heroText}>
-					<p className={styles.kicker}>Change data capture for application teams</p>
-					<h1 className={styles.headline}>Your search index should never be behind your database.</h1>
+					<p className={styles.kicker}>From Postgres to search. Always in sync.</p>
+					<h1 className={styles.headline}>Your database changes. Your search keeps up.</h1>
 					<p className={styles.sub}>
 						Driftbase reads the Postgres write-ahead log and applies every committed insert, update and
 						delete to your search index and cache, in commit order, usually in under a second. You
@@ -28,7 +28,7 @@ export default function Home() {
 					</p>
 					<div className={styles.actions}>
 						<a className={styles.primary} href={`${company.docsUrl}/getting-started`}>
-							Start syncing in 10 minutes
+							Sync your first database
 						</a>
 						<Link className={styles.secondary} href="/pricing">
 							See pricing
