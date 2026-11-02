@@ -20,7 +20,7 @@ export default function Home() {
 			<section className={styles.hero}>
 				<div className={styles.heroText}>
 					<p className={styles.kicker}>Change data capture for application teams</p>
-					<h1 className={styles.headline}>Your search index should never be behind your database.</h1>
+					<h1 className={styles.headline}>Your database changes. Your search keeps up.</h1>
 					<p className={styles.sub}>
 						Driftbase reads the Postgres write-ahead log and applies every committed insert, update and
 						delete to your search index and cache, in commit order, usually in under a second. You
