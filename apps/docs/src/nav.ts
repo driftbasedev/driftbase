@@ -23,6 +23,7 @@ export const nav: NavSection[] = [
 		label: "Guides",
 		items: [
 			{ title: "Sync to Meilisearch", href: "/guides/meilisearch" },
+			{ title: "Sync to Algolia", href: "/guides/algolia" },
 			{ title: "Invalidate a Redis cache", href: "/guides/redis-cache" },
 			{ title: "Run a backfill", href: "/guides/backfills" },
 		],
