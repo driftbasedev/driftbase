@@ -25,7 +25,7 @@ publication = "driftbase_main"
 | `max_slot_mb` | `10240`             | Alert when retained WAL for the slot exceeds this size.        |
 | `tls`         | `"prefer"`          | `disable`, `prefer`, `require` or `verify-full`.               |
 
-The source database must run with `wal_level = logical`, otherwise Driftbase cannot recieve
+The source database must run with `wal_level = logical`, otherwise Driftbase cannot receive
 changes and `drift sync` exits with `E102: wal_level is replica`.
 
 ## Sinks
