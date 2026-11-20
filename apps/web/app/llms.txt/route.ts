@@ -16,6 +16,7 @@ export function GET() {
 		"## Product",
 		"",
 		`- [Home](${base}/): What Driftbase does, how it works and the search and cache destinations it supports.`,
+		`- [Use cases](${base}/use-cases): Keeping search indexes and caches in sync with Postgres, retiring dual writes and cron reindex jobs, backfills and pipeline monitoring.`,
 		`- [Pricing](${base}/pricing): Plans priced by change event, from the free tier to Team and Scale.`,
 		`- [Changelog](${base}/changelog): Release notes for the drift CLI and the hosted service, which ship from the same release.`,
 		"",
