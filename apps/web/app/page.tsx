@@ -14,29 +14,49 @@ export const metadata: Metadata = {
 
 const sinks = ["Elasticsearch", "OpenSearch", "Meilisearch", "Typesense", "Redis", "Valkey"];
 
+const steps = [
+	{
+		title: "Connect your database",
+		body: "Point Driftbase at Postgres. It reads changes from a logical replication slot, so your tables and schema stay as they are.",
+	},
+	{
+		title: "Describe each index in SQL",
+		body: "One query per index sets the shape of its documents, joins and nested data included.",
+	},
+	{
+		title: "Changes arrive in commit order",
+		body: "Existing rows backfill alongside live traffic. After that, every committed change reaches your sinks, usually in under a second.",
+	},
+];
+
 export default function Home() {
 	return (
 		<>
 			<section className={styles.hero}>
 				<div className={styles.heroText}>
-					<p className={styles.kicker}>From Postgres to search. Always in sync.</p>
-					<h1 className={styles.headline}>Your database changes. Your search keeps up.</h1>
+					<p className={styles.kicker}>Change data capture for Postgres</p>
+					<h1 className={styles.headline}>Keep search and cache in sync with Postgres.</h1>
 					<p className={styles.sub}>
 						Driftbase reads the Postgres write-ahead log and applies every committed insert, update and
-						delete to your search index and cache, in commit order, usually in under a second. You
-						delete the cron job, the dual writes and the “reindex everything” button.
+						delete to Elasticsearch, OpenSearch, Meilisearch, Typesense, Redis and Valkey, in commit
+						order, usually in under a second. You delete the cron job, the dual writes and the “reindex
+						everything” button.
 					</p>
 					<div className={styles.actions}>
-						<a className={styles.primary} href={`${company.docsUrl}/getting-started`}>
-							Sync your first database
+						<a className={styles.primary} href={company.appUrl}>
+							Start syncing free
 						</a>
-						<Link className={styles.secondary} href="/pricing">
-							See pricing
-						</Link>
+						<a className={styles.secondary} href={`${company.docsUrl}/getting-started`}>
+							Install the CLI
+						</a>
 					</div>
 					<pre className={styles.install}>
 						<code>brew install driftbasedev/tap/drift</code>
 					</pre>
+					<p className={styles.reassure}>
+						Free for your first 1,000,000 change events a month, no card. The CLI is Apache-2.0, and the
+						hosted service runs the same binary. <Link href="/pricing">See pricing</Link>
+					</p>
 				</div>
 				<img
 					className={styles.heroArt}
@@ -54,6 +74,24 @@ export default function Home() {
 						<li key={s}>{s}</li>
 					))}
 				</ul>
+			</section>
+
+			<section className={styles.steps} aria-labelledby="how-it-works">
+				<h2 id="how-it-works" className={styles.sectionTitle}>
+					How it works
+				</h2>
+				<ol>
+					{steps.map((step, i) => (
+						<li key={step.title}>
+							<span className={styles.stepNum}>{i + 1}</span>
+							<h3>{step.title}</h3>
+							<p>{step.body}</p>
+						</li>
+					))}
+				</ol>
+				<a className={styles.secondary} href={`${company.docsUrl}/getting-started`}>
+					Sync your first database
+				</a>
 			</section>
 
 			<section className={styles.grid}>
@@ -100,15 +138,48 @@ export default function Home() {
 				</blockquote>
 			</section>
 
+			<section className={styles.choose} aria-labelledby="two-ways">
+				<h2 id="two-ways" className={styles.sectionTitle}>
+					Two ways to run it, one binary
+				</h2>
+				<div className={styles.options}>
+					<div className={styles.option}>
+						<h3>Hosted</h3>
+						<p>
+							Create a workspace, connect your database and let us run the pipeline, with lag and slot
+							size reported for you. The Free plan covers 1,000,000 change events a month.
+						</p>
+						<a className={styles.primary} href={company.appUrl}>
+							Create a free workspace
+						</a>
+					</div>
+					<div className={styles.option}>
+						<h3>Self-hosted</h3>
+						<p>
+							The <code>drift</code> CLI is Apache-2.0 and runs on your own infrastructure. It is the
+							same binary the hosted service runs.
+						</p>
+						<a className={styles.secondary} href={`${company.docsUrl}/getting-started`}>
+							Install the CLI
+						</a>
+					</div>
+				</div>
+			</section>
+
 			<section className={styles.closer}>
 				<h2>Free for your first million changes a month.</h2>
 				<p>
 					Run the CLI against your own infrastructure or let us host the pipeline. Either way, the Free
 					plan covers 1,000,000 change events a month with no card.
 				</p>
-				<a className={styles.primary} href={company.appUrl}>
-					Create a free workspace
-				</a>
+				<div className={styles.closerActions}>
+					<a className={styles.closerPrimary} href={company.appUrl}>
+						Start syncing free
+					</a>
+					<a className={styles.closerSecondary} href={`${company.docsUrl}/getting-started`}>
+						Install the CLI
+					</a>
+				</div>
 			</section>
 		</>
 	);
