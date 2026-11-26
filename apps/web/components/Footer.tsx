@@ -3,7 +3,7 @@ import { company } from "@driftbase/brand";
 import styles from "./Footer.module.css";
 
 export function Footer() {
-	const year = new Date().getFullYear();
+	const year = 2026;
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.inner}>
