@@ -15,7 +15,7 @@ const { frontmatter } = Astro.props;
 const current = Astro.url.pathname.replace(/\/$/, "") || "/";
 const canonical = new URL(current, Astro.site);
 const pageTitle = current === "/" ? "Driftbase Docs" : `${frontmatter.title} · Driftbase Docs`;
-const year = new Date().getFullYear();
+const year = 2026;
 ---
 
 <!doctype html>
