@@ -12,6 +12,9 @@ export function Footer() {
 						<h2 className={styles.heading}>Product</h2>
 						<ul>
 							<li>
+								<Link href="/use-cases">Use cases</Link>
+							</li>
+							<li>
 								<Link href="/pricing">Pricing</Link>
 							</li>
 							<li>
