@@ -51,7 +51,7 @@ const plans = [
 		per: "per month",
 		blurb: "For high-volume pipelines and teams with compliance requirements.",
 		features: [
-			"250,000,000 change events / month",
+			"250,000,000 change events / month and up",
 			"Unlimited sources and sinks",
 			"30-day replay window",
 			"Private networking (AWS PrivateLink, GCP PSC)",
@@ -74,7 +74,7 @@ const faqs = [
 	},
 	{
 		q: "What happens if I go over my Free limit?",
-		a: "Nothing breaks. We pause delivery to sinks and keep your replication slot position, and you get an email at 80% and 100%. Upgrade or wait for the next month and delivery resumes from where it stopped.",
+		a: "You get an email at 80% and 100%, then delivery to sinks pauses. Nothing is lost: your replication slot keeps its position, but it retains WAL until delivery resumes, so keep slot-size alerts on. Upgrade, or wait for the month to roll over (UTC), and delivery resumes from the same LSN.",
 	},
 	{
 		q: "Do you offer discounts?",
