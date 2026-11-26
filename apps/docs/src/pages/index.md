@@ -38,3 +38,5 @@ postgres (orders, order_items) ──▶ drift ──▶ meilisearch: orders
 - Every option in `driftbase.toml` is in the [configuration reference](/configuration).
 - Guides for [Meilisearch](/guides/meilisearch), [Redis caches](/guides/redis-cache) and
   [backfills](/guides/backfills).
+- Choosing a CDC tool? Read [Driftbase vs Debezium](https://driftbase.dev/compare/debezium)
+  for Postgres change data capture.

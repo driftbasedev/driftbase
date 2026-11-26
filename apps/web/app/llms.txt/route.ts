@@ -18,6 +18,7 @@ export function GET() {
 		`- [Home](${base}/): What Driftbase does, how it works and the search and cache destinations it supports.`,
 		`- [Pricing](${base}/pricing): Plans priced by change event, from the free tier to Team and Scale.`,
 		`- [Changelog](${base}/changelog): Release notes for the drift CLI and the hosted service, which ship from the same release.`,
+		`- [Driftbase vs Debezium](${base}/compare/debezium): A sourced comparison of Driftbase and Debezium for Postgres change data capture into search indexes and caches.`,
 		"",
 		"## Developers",
 		"",

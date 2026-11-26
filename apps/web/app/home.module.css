@@ -129,6 +129,13 @@
 	border-radius: 4px;
 }
 
+.compare {
+	max-width: var(--db-max);
+	margin: 40px auto 0;
+	padding: 0 20px;
+	color: var(--db-slate);
+}
+
 .quote {
 	max-width: 760px;
 	margin: 72px auto 0;

@@ -17,6 +17,9 @@ export default function Blog() {
 			<p className={page.eyebrow}>Blog</p>
 			<h1 className={page.title}>Notes from the replication slot</h1>
 			<p className={page.lede}>How Driftbase works inside, and what we learn running it for other people.</p>
+			<p className={styles.aside}>
+				Choosing a Postgres CDC pipeline? Read <Link href="/compare/debezium">Driftbase vs Debezium</Link>.
+			</p>
 			<ul className={styles.list}>
 				{posts.map((p) => (
 					<li key={p.slug}>

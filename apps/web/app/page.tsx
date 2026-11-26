@@ -89,6 +89,11 @@ export default function Home() {
 				</article>
 			</section>
 
+			<p className={styles.compare}>
+				Weighing Driftbase against Debezium for Postgres change data capture?{" "}
+				<Link href="/compare/debezium">See how the two compare</Link>.
+			</p>
+
 			<section className={styles.quote}>
 				<blockquote>
 					<p>
